@@ -1,0 +1,122 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #333;
+    color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-image: url('https://i.pinimg.com/736x/8a/d6/03/8ad60328e456f0f5d5cf98244ad98622.jpg'); /* Single image for background */
+    background-repeat: no-repeat;
+    background-size: cover; /* Cover to fill the space */
+    padding-left: 100px; /* Adjust for left margin */
+    padding-right: 100px; /* Adjust for right margin */
+}
+
+header {
+    text-align: center;
+    background-color: #2a2828;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #000; /* Black color */
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* Shining effect */
+    font-family: 'Georgia', serif; /* Great font */
+}
+
+h4 {
+    font-size: 1.2em;
+    font-weight: normal;
+    margin-top: 10px;
+    color: #000000;
+    text-shadow: 0 0 20px rgba(188, 182, 182, 0.8);
+
+
+}
+.motto {
+    font-size: 1.2em;
+    font-weight: normal;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.belief {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #f2f2f2;
+    margin: 20px 0; /* Adjusted margin */
+    font-family: 'Cursive'; /* Cursive font */
+    animation: float 3s ease-in-out infinite; /* Floating effect */
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0); /* No movement down */
+    }
+    50% {
+        transform: translateY(-10px); /* Float upwards */
+    }
+}
+
+.content-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #393737;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+h2 {
+    color: #f2f2f2;
+    font-weight: bold;
+    transition: transform 0.3s, color 0.3s;
+    font-family: 'Verdana', sans-serif; /* Great font style */
+}
+
+h2:hover {
+    transform: scale(1.05);
+    color: #fff;
+}
+
+p, ul {
+    line-height: 1.6;
+}
+
+ul {
+    margin: 10px 0;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #bbb;
+}
+
+.quote-bot {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    display:flex; /* Initially hidden */
+    z-index: 10; /* On top of other elements */
+    transition: opacity 0.5s ease;
+}
+
+.quote-bot p {
+    margin: 0;
+    font-family: 'Cursive';
+    font-size: 1.2em;
+}

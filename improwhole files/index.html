@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImproWhole</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    .personality {
+        cursor: pointer;
+        color: black; /* Changed from blue to black */
+        text-decoration: underline;
+    }
+    .info {
+        margin-left: 20px;
+    }
+    .personality:hover {
+        color: #555; /* A darker shade for hover effect */
+    }
+</style>
+
+<body>
+
+<header>
+    <h1>Rehabilitation</h1>
+    <h4>ImproWhole</h4>
+    <p class="motto">Your stop to a better you.</p>
+</header>
+
+<div class="belief-container">
+    <div class="belief">
+        <p>We believe in second chances!</p>
+    </div>
+</div>
+
+<div class="content-container">
+    <section>
+        <h2>What is Rehabilitation?</h2>
+        <p>Rehabilitation is a process aimed at enabling individuals to achieve optimal physical, mental, and social functioning after an illness, injury, or disability. It encompasses various therapies and interventions tailored to meet the unique needs of each person.</p>
+
+        <h2>Importance of Rehabilitation</h2>
+        <p>Rehabilitation plays a crucial role in improving quality of life. Here are a few key reasons:</p>
+        <ul>
+            <li><strong>Physical Recovery:</strong> Helps regain strength and mobility, facilitating independence.</li>
+            <li><strong>Mental Well-being:</strong> Offers support to cope with emotional challenges, promoting mental health.</li>
+            <li><strong>Social Reintegration:</strong> Encourages participation in community activities, fostering social connections.</li>
+            <li><strong>Enhanced Quality of Life:</strong> Empowers individuals to pursue their goals and hobbies, leading to greater satisfaction.</li>
+        <li><strong>Skillful Recovery:</strong>Rehab teaches you new skills, so you can tackle life’s challenges like a pro—turning setbacks into setups for a comeback!</li>
+    <li><strong>Mind Over Matter:</strong>It’s not just about the body; rehab strengthens the mind, too—because a strong mind is the best kind of muscle!</li>    
+    <li><strong>Gradual Growth:</strong>Just like a tree grows slowly but surely, rehabilitation nurtures gradual progress—no need to rush; good things take time to branch out!</li>
+<li><strong>Goals on the Horizon:</strong>Setting and achieving goals in rehab gives you something to look forward to—because every milestone is a reason to celebrate!</li>
+<li><strong>Rehab It Up!:</strong>Ultimately, rehabilitation is about bouncing back and “rehabbing” your life—it’s a comeback story waiting to unfold!</li>
+
+</ul>
+
+        <h2>Conclusion</h2>
+        <p>Rehabilitation is not just about recovering from an injury; it is about reclaiming life. By addressing physical, emotional, and social aspects, rehabilitation significantly enhances one’s quality of life.</p>
+    <p>Rehabilitation isn’t just a process; it’s a journey of resilience and hope—so let’s make those strides together!</p>
+    
+    </section>
+
+    <section id="rehab-personalities">
+        <h2>Discover Rehabilitation Experts to Suit Your Needs</h2>
+        <ul>
+            <li class="personality" onclick="toggleInfo('info1')">Dr. John Norcross
+                <div id="info1" class="info" style="display: none;">
+                    <strong>Specialty:</strong> Psychologist and expert in behavior change and addiction recovery.<br>
+                    <strong>Learn More:</strong> <a href="https://www.johnnorcross.com" target="_blank">Visit his website</a>
+                </div>
+            </li>
+            <li class="personality" onclick="toggleInfo('info2')">Brené Brown
+                <div id="info2" class="info" style="display: none;">
+                    <strong>Specialty:</strong> Researcher and speaker focused on vulnerability and emotional healing.<br>
+                    <strong>Learn More:</strong> <a href="https://brenebrown.com" target="_blank">Visit her website</a>
+                </div>
+            </li>
+            <li class="personality" onclick="toggleInfo('info3')">Gabor Maté
+                <div id="info3" class="info" style="display: none;">
+                    <strong>Specialty:</strong> Physician known for work on addiction, trauma, and mental health.<br>
+                    <strong>Learn More:</strong> <a href="https://drgabormate.com" target="_blank">Visit his website</a>
+                </div>
+            </li>
+            <li class="personality" onclick="toggleInfo('info4')">Tony Robbins
+                <div id="info4" class="info" style="display: none;">
+                    <strong>Specialty:</strong> Life coach and motivational speaker specializing in personal development.<br>
+                    <strong>Learn More:</strong> <a href="https://www.tonyrobbins.com" target="_blank">Visit his website</a>
+                </div>
+            </li>
+            <li class="personality" onclick="toggleInfo('info5')">Marsha Linehan
+                <div id="info5" class="info" style="display: none;">
+                    <strong>Specialty:</strong> Creator of Dialectical Behavior Therapy (DBT).<br>
+                    <strong>Learn More:</strong> <a href="https://www.linehaninstitute.org" target="_blank">Visit her website</a>
+                </div>
+            </li>
+            <li class="personality" onclick="toggleInfo('info6')">Dr. Sue Johnson
+                <div id="info6" class="info" style="display: none;">
+                    <strong>Specialty:</strong> Developer of Emotionally Focused Therapy (EFT) for couples.<br>
+                    <strong>Learn More:</strong> <a href="https://www.iceeft.com" target="_blank">Visit her website</a>
+                </div>
+            </li>
+            <li class="personality" onclick="toggleInfo('info7')">Dr. Phil McGraw
+                <div id="info7" class="info" style="display: none;">
+                    <strong>Specialty:</strong> Psychologist and television personality.<br>
+                    <strong>Learn More:</strong> <a href="https://www.drphil.com" target="_blank">Visit his website</a>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2024 ImproWhole. All rights reserved.</p>
+</footer>
+
+<!-- Motivational Quote Bot -->
+<div id="quote-bot" class="quote-bot">
+    <p id="quote-text"></p>
+</div>
+
+<script>
+    function toggleInfo(infoId) {
+        const infoDiv = document.getElementById(infoId);
+        infoDiv.style.display = infoDiv.style.display === 'none' || !infoDiv.style.display ? 'block' : 'none';
+    }
+</script>
+
+<script>
+    const quotes = [
+        "Believe you can and you're halfway there.",
+        "Your stop to a better you.",
+        "The only limit to our realization of tomorrow is our doubts of today.",
+        "We believe in second chances.",
+        "What lies behind us and what lies before us are tiny matters compared to what lies within us.",
+        "You are never too old to set another goal or to dream a new dream.",
+        "It does not matter how slowly you go as long as you do not stop."
+    ];
+
+    function showQuote() {
+        const quoteBot = document.getElementById('quote-bot');
+        const quoteText = document.getElementById('quote-text');
+
+        // Get a random quote
+        const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+        quoteText.textContent = randomQuote;
+
+        // Show the quote bot
+        quoteBot.style.display = 'block';
+
+        // Hide the quote bot after 5 seconds
+        setTimeout(() => {
+            quoteBot.style.display = 'none';
+        }, 5000);
+    }
+
+    // Show the quote initially and then every 60 seconds
+    showQuote();
+    setInterval(showQuote, 60000);
+</script>
+
+</body>
+</html>
